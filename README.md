@@ -1,6 +1,10 @@
-# 📚 Acompanhamento de Atividades e Notas
+ <p align="center"> Acompanhamento de Atividades e Notas </p>
+<p align="center"> <img width="416" height="106" alt="logo melhor" src="https://github.com/user-attachments/assets/55824aa8-a037-46b3-b0c9-a33bd6b2d159" />
+<p align="center"> Aplicação para centralizar o controle acadêmico: disciplinas por período, atividades com prazo e peso, notas e desempenho parcial. </p>
 
-Aplicação para centralizar o controle acadêmico: disciplinas por período, atividades com prazo e peso, notas e desempenho parcial — sem planilhas. Desenvolvida com apoio do **GitHub Copilot** (veja `.github/copilot-instructions.md`).
+##
+
+<p align="center"> <img width="6000" height="3375" alt="Blue and White Modern Mobile App Mockup Presentation Presentation (2)" src="https://github.com/user-attachments/assets/06961f41-10fe-4a67-899e-6e7c7b7f9512" /> 
 
 ## ✨ Funcionalidades
 - **Gestão de disciplinas** por período/semestre, com média mínima configurável.
@@ -54,6 +58,20 @@ Aplicação para centralizar o controle acadêmico: disciplinas por período, at
 | **Compiladores** | 2026.2 | 6,0 | Atividade 2 – Construção de um Analisador Léxico Simples | Desenvolver um pequeno programa capaz de refletir os principais elementos de uma linguagem de programação. | 27/11/2026 | 1,00 | Pendente | `—` |
 | **Inteligência artificial** | 2026.2 | 6,0 | Atividade 1 – Fundamentos da Inteligência Artificial | Compreender os conceitos fundamentais da Inteligência Artificial e suas aplicações na sociedade. | 24/11/2026 | 1,00 | Concluída | `9,0` |
 | **Inteligência artificial** | 2026.2 | 6,0 | Atividade 2 – Criando uma Inteligência Artificial na Prática | Explorar o funcionamento de uma aplicação de Inteligência Artificial e compreender como ela pode resolver problemas reais. | 26/11/2026 | 1,00 | Concluída | `3,0` (Aprovado) / `2,0` (Reprovado) |
+
+## 
+<p align="center"> <img width="1916" height="841" alt="Captura de tela 2026-11-18 085727" src="https://github.com/user-attachments/assets/3adb44b4-be05-44ce-8be6-01f4ef348513" /> </p>
+
+## 
+<p align="center"> <img width="1917" height="841" alt="Captura de tela 2026-11-18 085710" src="https://github.com/user-attachments/assets/c03a464e-581c-405d-a620-ebf84a992589" /> </p>
+
+##
+<p align="center"> <img width="1917" height="886" alt="Captura de tela 2026-11-18 085350" src="https://github.com/user-attachments/assets/832942a8-e737-4aa7-8561-2908d3ef677b" /> </p>
+
+##
+<p align="center"> <img width="1916" height="867" alt="Captura de tela 2026-11-18 085409" src="https://github.com/user-attachments/assets/a5087593-1a13-4847-baa9-29bac61e0a39" /> </p>
+
+##
 
 ### 📊 Painel de Indicadores
 * **Atividades em Aberto:** `4`

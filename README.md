@@ -74,3 +74,11 @@ O sistema utiliza um modelo relacional estruturado para garantir a integridade d
 2. **Disciplinas:** Matérias cursadas no período.
 3. **Atividades/Avaliações:** Prazos, pesos, descrições e status de entrega.
 4. **Notas:** Vínculo direto entre avaliações e o aproveitamento obtido.
+
+---
+
+## Integrantes 
+
+Cauã Paiva
+Arthur Ferreiea
+Josielly Macedo

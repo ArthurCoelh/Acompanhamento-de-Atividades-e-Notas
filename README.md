@@ -22,6 +22,39 @@ Aplicação para centralizar o controle acadêmico: disciplinas por período, at
 | Inteligência Artificial | Algoritmos de Busca (A* e Heurísticas) | Trabalho | 26/11/2026 | 📅 Pendente | 2.5 | - |
 | Inteligência Artificial | Redes Neurais e Classificação | Projeto | 04/12/2026 | 📅 Pendente | 2.5 | - |
 
+## 📊 Estrutura e Dados do Sistema (Contexto para README / Copilot)
+
+### 1. Mapeamento de Telas e Componentes
+
+| Seção / Aba | Componentes Principais | Funcionalidades |
+| :--- | :--- | :--- |
+| **Barra Lateral** | Aparência (Claro/Escuro), Cores do tema (`Azul`), Seletor de Aluno (`João (#1)`), Formulário `Novo aluno` e checkbox `Habilitar exclusão do aluno` | Alterna temas, seleciona o perfil ativo, cadastra novos alunos (Nome e E-mail opcional) e libera a opção de exclusão. |
+| **Painel** | Banner de boas-vindas (`Olá, João`), 4 Cards de Resumo (`Disciplinas`, `Atividades em aberto`, `Próximo prazo`, `Disciplinas em alerta`), `Desempenho por disciplina`, `Próximos prazos` e `Sugestões de estudo` | Exibe visão geral do semestre, barras de progresso de notas, tabela cronológica de entregas e recomendações automáticas de estudo. |
+| **Disciplinas** | Formulário de cadastro (`Disciplina`, `Período`, `Média mínima`), Tabela de disciplinas cadastradas e seção `incluir ou excluir` | Permite adicionar novas matérias com suas respectivas médias de corte e gerenciar registros existentes. |
+| **Atividades e notas** | Seletor de disciplina, 3 Cards de Indicadores (`Média parcial`, `Nota necessária`, `Situação`), Tabela de atividades, Formulário de nova atividade e `incluir ou excluir` | Calcula médias em tempo real, lista tarefas com prazos/pesos/notas e permite cadastrar ou avaliar atividades. |
+
+---
+
+### 2. Regras de Negócio e Estados de Situação
+
+| Estado / Indicador | Condição / Lógica Aplicada | Comportamento na Interface |
+| :--- | :--- | :--- |
+| **Sem notas** | Nenhuma atividade da disciplina possui nota lançada (`Status: Pendente`) | `Média parcial` exibe `—`; `Nota necessária` exibe o valor da média mínima (`6,0`); card de sugestão orienta a priorizar a próxima entrega. |
+| **Aprovado** | `Média parcial >= Média mínima` (ex: Compiladores com `8,0 >= 6,0` ou IA com `(9,0 + 3,0) / 2 = 6,0`) | `Nota necessária` exibe `—`; badge verde `Aprovado` é exibido; sugestão recomenda revisão leve e foco nas demais matérias. |
+| **Reprovado** | Todas as atividades concluídas e `Média parcial < Média mínima` (ex: IA com `(9,0 + 2,0) / 2 = 5,5 < 6,0`) | `Situação` exibe `Reprovado`; `Nota necessária` exibe `—`. |
+| **Próximos 7 dias** | Atividades pendentes com vencimento em até 7 dias a partir da data atual (`18/11/2026`) | Destaca alertas no topo de `Sugestões de estudo` listando as tarefas urgentes. |
+
+---
+
+### 3. Dados de Exemplo (Seed / Testes — Período `2026.2`)
+
+| Disciplina | Período | Média Mínima | Atividade | Descrição | Prazo | Peso | Status | Nota (Cenários) |
+| :--- | :---: | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **Compiladores** | 2026.2 | 6,0 | Atividade 1 – Análise Léxica e Sintática | Compreender como um compilador identificar os tokens e verificar a estrutura sintática de um programa. | 23/11/2026 | 1,00 | Pendente | `—` |
+| **Compiladores** | 2026.2 | 6,0 | Atividade 2 – Construção de um Analisador Léxico Simples | Desenvolver um pequeno programa capaz de refletir os principais elementos de uma linguagem de programação. | 27/11/2026 | 1,00 | Pendente | `—` |
+| **Inteligência artificial** | 2026.2 | 6,0 | Atividade 1 – Fundamentos da Inteligência Artificial | Compreender os conceitos fundamentais da Inteligência Artificial e suas aplicações na sociedade. | 24/11/2026 | 1,00 | Concluída | `9,0` |
+| **Inteligência artificial** | 2026.2 | 6,0 | Atividade 2 – Criando uma Inteligência Artificial na Prática | Explorar o funcionamento de uma aplicação de Inteligência Artificial e compreender como ela pode resolver problemas reais. | 26/11/2026 | 1,00 | Concluída | `3,0` (Aprovado) / `2,0` (Reprovado) |
+
 ### 📊 Painel de Indicadores
 * **Atividades em Aberto:** `4`
 * **Disciplinas em Alerta (Nota < 6.0):** `0`

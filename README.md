@@ -22,14 +22,23 @@ O **Acompanhamento de Atividades e Notas** nasceu da necessidade de criar uma so
 
 ---
 
-## 📚 Tabela
+## 📚 Acompanhamento de Atividades e Notas
 
-| Disciplina / Módulo | Atividade | Tipo | Data de Entrega | Status | Peso | Nota |
+> **Critério de Aprovação:** Nota mínima `6.0` por disciplina.
+
+| Disciplina | Atividade | Tipo | Data de Entrega | Status | Peso | Nota |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
-| Engenharia de Software | Levantamento de Requisitos | Trabalho | 10/11/2026 | ✅ Concluído | 2.0 | 9.5 |
-| Banco de Dados | Modelagem ER e Normalização | Lista | 18/11/2026 | ⏳ Em andamento | 1.5 | - |
-| Estrutura de Dados | Implementação de Árvores | Projeto | 25/11/2026 | 📅 Pendente | 3.0 | - |
-| Arquitetura de Computadores | Avaliação Bimestral | Prova | 02/12/2026 | 📅 Pendente | 3.5 | - |
+| Compiladores | Análise Léxica e Sintática | Projeto | 23/11/2026 | ⏳ Em andamento | 3.0 | - |
+| Compiladores | Lista de Gramáticas Livres de Contexto | Lista | 30/11/2026 | 📅 Pendente | 2.0 | - |
+| Inteligência Artificial | Algoritmos de Busca (A* e Heurísticas) | Trabalho | 26/11/2026 | 📅 Pendente | 2.5 | - |
+| Inteligência Artificial | Redes Neurais e Classificação | Projeto | 04/12/2026 | 📅 Pendente | 2.5 | - |
+
+### 📊 Painel de Indicadores
+* **Atividades em Aberto:** `4`
+* **Disciplinas em Alerta (Nota < 6.0):** `0`
+* **Próximo Prazo:** `23/11/2026` *(Compiladores - Análise Léxica e Sintática)*
+* **Nota Mínima Exigida:** `6.0`
+* **Legenda de Status:** ✅ Concluído | ⏳ Em andamento | 📅 Pendente | ⚠️ Atrasado
 
 ### 📊 Resumo de Desempenho
 * **Média Parcial:** `9.5`

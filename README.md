@@ -22,6 +22,22 @@ O **Acompanhamento de Atividades e Notas** nasceu da necessidade de criar uma so
 
 ---
 
+## 📚 Tabela
+
+| Disciplina / Módulo | Atividade | Tipo | Data de Entrega | Status | Peso | Nota |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Engenharia de Software | Levantamento de Requisitos | Trabalho | 10/11/2026 | ✅ Concluído | 2.0 | 9.5 |
+| Banco de Dados | Modelagem ER e Normalização | Lista | 18/11/2026 | ⏳ Em andamento | 1.5 | - |
+| Estrutura de Dados | Implementação de Árvores | Projeto | 25/11/2026 | 📅 Pendente | 3.0 | - |
+| Arquitetura de Computadores | Avaliação Bimestral | Prova | 02/12/2026 | 📅 Pendente | 3.5 | - |
+
+### 📊 Resumo de Desempenho
+* **Média Parcial:** `9.5`
+* **Atividades Concluídas:** `1 / 4`
+* **Legenda de Status:** ✅ Concluído | ⏳ Em andamento | 📅 Pendente | ⚠️ Atrasado
+
+---
+
 ## 🛠️ Tecnologias e Ferramentas
 
 Este projeto foi construído utilizando as seguintes tecnologias:

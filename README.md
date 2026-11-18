@@ -1,102 +1,73 @@
-# Acompanhamento de Atividades e Notas
+# 📚 Acompanhamento de Atividades e Notas
 
-<p align="center"> <img width="416" height="106" alt="logo melhor" src="https://github.com/user-attachments/assets/c5660ff2-1ca2-4f53-9571-5a261f2bb7ca" /> </p>
+Aplicação para centralizar o controle acadêmico: disciplinas por período, atividades com prazo e peso, notas e desempenho parcial — sem planilhas. Desenvolvida com apoio do **GitHub Copilot** (veja `.github/copilot-instructions.md`).
 
-# Sobre
-O Acompanhamento de Atividades e Notas é uma aplicação inteligente desenvolvida com o suporte do GitHub Copilot. Além de organizar tarefas acadêmicas, prazos e notas ponderadas, o projeto integra prompts e fluxos assistidos por IA para ajudar estudantes a otimizarem seus cronogramas de estudo e anteciparem necessidades de reforço escolar.
-# 📚 Breve Resumo
+## ✨ Funcionalidades
+- **Gestão de disciplinas** por período/semestre, com média mínima configurável.
+- **Controle de atividades**: pendente, em andamento e concluída, com prazo e peso.
+- **Registro de notas** com média ponderada automática e **nota necessária** nas avaliações restantes.
+- **Painel de desempenho**: cabeçalho de boas-vindas, cartões por disciplina com barra de média parcial (marca na média mínima) e situação por cor (Aprovado, No caminho, Atenção, Em risco, Reprovado), próximos prazos e sugestões de estudo/reforço.
+- **CRUD completo** persistido em banco relacional (SQLite).
+- **Temas (versão web)**: padrão *Azul*, além de Preto e branco, Verde, Roxo, Rosa e cor personalizada, cada um em **modo claro e escuro**, escolhidos na barra lateral.
+- **Sugestões de estudo** para todas as disciplinas (não só as em alerta), com atrasos e prazos da semana.
 
-> Sistema desenvolvido para centralizar o controle acadêmico, eliminar a redundância de planilhas e otimizar a visualização de prazos, entregas e desempenho escolar/universitário.
+## 🛠️ Tecnologias
+Python 3.10+ · Streamlit · Pandas · SQLite · Tkinter (versão desktop) · Git & GitHub
 
----
-
-## 🚀 Sobre o Projeto
-
-O **Acompanhamento de Atividades e Notas** nasceu da necessidade de criar uma solução prática e eficiente para o gerenciamento da vida acadêmica. O projeto foca em organizar o fluxo de tarefas, trabalhos e avaliações, permitindo um acompanhamento transparente e ágil do progresso nas disciplinas.
-
----
-
-## ✨ Funcionalidades Principais
-
-* **Gestão de Disciplinas:** Cadastro e organização de matérias por período/semestre.
-* **Controle de Atividades:** Acompanhamento de tarefas pendentes, em andamento e concluídas.
-* **Registro de Notas:** Lançamento e cálculo automatizado de médias e desempenho parcial.
-* **Persistência de Dados:** Operações completas de CRUD via banco de dados relacional.
-* **Interface Intuitiva:** Foco na agilidade de consulta e experiência do usuário.
-
----
-
-## 📊 Tabela
-
-### 1. Mapeamento de Telas e Componentes
-
-| Seção / Aba | Componentes Principais | Funcionalidades |
-| :--- | :--- | :--- |
-| **Painel** | Banner de boas-vindas (`Olá, João`), 4 Cards de Resumo (`Disciplinas`, `Atividades em aberto`, `Próximo prazo`, `Disciplinas em alerta`), `Desempenho por disciplina`, `Próximos prazos` e `Sugestões de estudo` | Exibe visão geral do semestre, barras de progresso de notas, tabela cronológica de entregas e recomendações automáticas de estudo. |
-| **Disciplinas** | Formulário de cadastro (`Disciplina`, `Período`, `Média mínima`), Tabela de disciplinas cadastradas e seção `incluir ou excluir` | Permite adicionar novas matérias com suas respectivas médias de corte e gerenciar registros existentes. |
-| **Atividades e notas** | Seletor de disciplina, 3 Cards de Indicadores (`Média parcial`, `Nota necessária`, `Situação`), Tabela de atividades, Formulário de nova atividade e `incluir ou excluir` | Calcula médias em tempo real, lista tarefas com prazos/pesos/notas e permite cadastrar ou avaliar atividades. |
-
----
-
-### 2. Regras de Negócio e Estados de Situação
-
-| Estado / Indicador | Condição / Lógica Aplicada | Comportamento na Interface |
-| :--- | :--- | :--- |
-| **Sem notas** | Nenhuma atividade da disciplina possui nota lançada (`Status: Pendente`) | `Média parcial` exibe `—`; `Nota necessária` exibe o valor da média mínima (`6,0`); card de sugestão orienta a priorizar a próxima entrega. |
-| **Aprovado** | `Média parcial >= Média mínima` (ex: Compiladores com `8,0 >= 6,0` ou IA com `(9,0 + 3,0) / 2 = 6,0`) | `Nota necessária` exibe `—`; badge verde `Aprovado` é exibido; sugestão recomenda revisão leve e foco nas demais matérias. |
-| **Reprovado** | Todas as atividades concluídas e `Média parcial < Média mínima` (ex: IA com `(9,0 + 2,0) / 2 = 5,5 < 6,0`) | `Situação` exibe `Reprovado`; `Nota necessária` exibe `—`. |
-| **Próximos 7 dias** | Atividades pendentes com vencimento em até 7 dias a partir da data atual (`18/11/2026`) | Destaca alertas no topo de `Sugestões de estudo` listando as tarefas urgentes. |
-
----
-
-### 3. Dados de Exemplo (Seed / Testes — Período `2026.2`)
-
-| Disciplina | Período | Média Mínima | Atividade | Descrição | Prazo | Peso | Status | Nota (Cenários) |
-| :--- | :---: | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
-| **Compiladores** | 2026.2 | 6,0 | Atividade 1 – Análise Léxica e Sintática | Compreender como um compilador identificar os tokens e verificar a estrutura sintática de um programa. | 23/11/2026 | 1,00 | Pendente | `—` |
-| **Compiladores** | 2026.2 | 6,0 | Atividade 2 – Construção de um Analisador Léxico Simples | Desenvolver um pequeno programa capaz de refletir os principais elementos de uma linguagem de programação. | 27/11/2026 | 1,00 | Pendente | `—` |
-| **Inteligência artificial** | 2026.2 | 6,0 | Atividade 1 – Fundamentos da Inteligência Artificial | Compreender os conceitos fundamentais da Inteligência Artificial e suas aplicações na sociedade. | 24/11/2026 | 1,00 | Concluída | `9,0` |
-| **Inteligência artificial** | 2026.2 | 6,0 | Atividade 2 – Criando uma Inteligência Artificial na Prática | Explorar o funcionamento de uma aplicação de Inteligência Artificial e compreender como ela pode resolver problemas reais. | 26/11/2026 | 1,00 | Concluída | `3,0` (Aprovado) / `2,0` (Reprovado) |
-
----
-
-## Estrutura do Site / Projeto
-
-| Arquitetura / Componente | Descrição / Elementos |
-| :--- | :--- |
-| **Painel Acadêmico** | Visão geral com cartões de resumo (disciplinas, atividades em aberto, próximos prazos, alertas), desempenho por disciplina, próximos prazos cronológicos e sugestões de estudo[cite: 1, 6]. |
-| **Gestão de Disciplinas** | Cadastro de matérias informando período letivo (ex: `2026.2`) e média mínima exigida (`6,0`). |
-| **Gestão de Atividades e Notas** | Listagem de tarefas por disciplina com descrição, prazos, pesos, status (`Pendente` / `Concluída`) e notas parciais para cálculo automático de aprovação. |
-| **Barra Lateral e Perfil** | Configurações de tema (claro/escuro e cores), seletor de alunos ativos (ex: `João (#1)`) e opções de cadastro/exclusão de perfis. |
-
-![Uploading WhatsApp Image 2026-11-18 at 00.33.59 (2).jpeg…]()
+## ▶️ Como executar
+```bash
+git clone https://github.com/josiellycosta/Acompanhamento.git
+cd Acompanhamento
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+No Linux, se faltar o Tkinter: `sudo apt install python3-tk`. O banco `academico.db` é criado automaticamente na primeira execução.
 
 
----
+## 🌐 Versão web (Streamlit)
+A versão web roda no navegador (`streamlit_app.py`) e compartilha as regras de cálculo e a camada SQLite com a versão desktop.
 
-## 🛠️ Tecnologias e Ferramentas
+**No seu computador**
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
 
-Este projeto foi construído utilizando as seguintes tecnologias:
+**Dentro do GitHub (Codespaces)** — Code → Codespaces → *Create codespace on main*. O ambiente instala tudo e abre o app sozinho (porta 8501).
 
-* **Linguagem:** Python 🐍
-* **Banco de Dados:** SQL (SQLite / MySQL)
-* **Interface Gráfica (Desktop):** Tkinter
-* **Controle de Versão:** Git & GitHub
+**Publicar online (Streamlit Community Cloud)** — em [share.streamlit.io](https://share.streamlit.io) escolha este repositório e o arquivo `streamlit_app.py`.
 
----
+> ⚠️ O GitHub Pages não executa Python. No Streamlit Community Cloud, o armazenamento local não deve ser tratado como permanente: o arquivo `academico.db` pode ser perdido quando o ambiente for recriado. Para uso contínuo online, configure um banco externo persistente (por exemplo, PostgreSQL). Esta versão não possui autenticação: não publique dados acadêmicos pessoais em um app público. No computador e no Codespace, os dados ficam no arquivo local `academico.db`.
 
-## ⚙️ Arquitetura do Banco de Dados (Schema)
+## 🧪 Testes
+```bash
+python -m unittest discover -s tests -t . -v
+```
 
-O sistema utiliza um modelo relacional estruturado para garantir a integridade dos dados acadêmicos. As principais entidades englobam:
-1. **Alunos/Usuários:** Informações básicas de cadastro.
-2. **Disciplinas:** Matérias cursadas no período.
-3. **Atividades/Avaliações:** Prazos, pesos, descrições e status de entrega.
-4. **Notas:** Vínculo direto entre avaliações e o aproveitamento obtido.
+## ⚙️ Esquema do banco
+| Tabela | Campos principais |
+|---|---|
+| `alunos` | id, nome, email |
+| `disciplinas` | id, aluno_id → alunos, nome, periodo, media_minima |
+| `atividades` | id, disciplina_id → disciplinas, titulo, descricao, prazo, peso, status |
+| `notas` | id, atividade_id → atividades (única), valor (0–10) |
 
----
+Todas as relações usam `ON DELETE CASCADE`.
 
-## 👥 Colaboradores
+## 🧮 Regras de cálculo
+- **Média parcial** = Σ(nota × peso) ÷ Σ(peso das atividades já avaliadas).
+- **Nota necessária** = (média mínima × Σ peso total − Σ pontos obtidos) ÷ Σ peso das atividades sem nota.
+- Os pesos de todas as atividades cadastradas formam o total da disciplina; cadastre todas as avaliações previstas para a projeção ficar correta.
+- **Em risco**: nota necessária > 10 · **Atenção**: nota necessária > 8 ou média parcial abaixo da mínima.
 
-- **Cauã Paiva**
-- **Arthur Ferreira**
-- **Josielly Macedo**
+## 📁 Estrutura
+```
+main.py        ponto de entrada
+ui.py          interface desktop (Tkinter)
+streamlit_app.py  interface web (Streamlit, com temas claro/escuro)
+.streamlit/config.toml  tema base (Azul)
+database.py    esquema e CRUD (SQLite)
+calculos.py    médias, nota necessária e situação
+tests/         testes unitários
+.github/       CI (Actions) e instruções do Copilot
+```

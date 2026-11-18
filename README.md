@@ -69,7 +69,8 @@ O **Acompanhamento de Atividades e Notas** nasceu da necessidade de criar uma so
 | **Gestão de Atividades e Notas** | Listagem de tarefas por disciplina com descrição, prazos, pesos, status (`Pendente` / `Concluída`) e notas parciais para cálculo automático de aprovação. |
 | **Barra Lateral e Perfil** | Configurações de tema (claro/escuro e cores), seletor de alunos ativos (ex: `João (#1)`) e opções de cadastro/exclusão de perfis. |
 
-https://github.com/cauapaivadecarvalho85-cmyk/Acompanhamento-de-Atividades-e-Notas/blob/main/WhatsApp%20Image%202026-11-18%20at%2000.33.59%20(2).jpeg
+![Uploading WhatsApp Image 2026-11-18 at 00.33.59 (2).jpeg…]()
+
 
 ---
 

@@ -28,7 +28,6 @@ O **Acompanhamento de Atividades e Notas** nasceu da necessidade de criar uma so
 
 | Seção / Aba | Componentes Principais | Funcionalidades |
 | :--- | :--- | :--- |
-| **Barra Lateral** | Aparência (Claro/Escuro), Cores do tema (`Azul`), Seletor de Aluno (`João (#1)`), Formulário `Novo aluno` e checkbox `Habilitar exclusão do aluno` | Alterna temas, seleciona o perfil ativo, cadastra novos alunos (Nome e E-mail opcional) e libera a opção de exclusão. |
 | **Painel** | Banner de boas-vindas (`Olá, João`), 4 Cards de Resumo (`Disciplinas`, `Atividades em aberto`, `Próximo prazo`, `Disciplinas em alerta`), `Desempenho por disciplina`, `Próximos prazos` e `Sugestões de estudo` | Exibe visão geral do semestre, barras de progresso de notas, tabela cronológica de entregas e recomendações automáticas de estudo. |
 | **Disciplinas** | Formulário de cadastro (`Disciplina`, `Período`, `Média mínima`), Tabela de disciplinas cadastradas e seção `incluir ou excluir` | Permite adicionar novas matérias com suas respectivas médias de corte e gerenciar registros existentes. |
 | **Atividades e notas** | Seletor de disciplina, 3 Cards de Indicadores (`Média parcial`, `Nota necessária`, `Situação`), Tabela de atividades, Formulário de nova atividade e `incluir ou excluir` | Calcula médias em tempo real, lista tarefas com prazos/pesos/notas e permite cadastrar ou avaliar atividades. |

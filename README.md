@@ -11,7 +11,7 @@ Aplicação para centralizar o controle acadêmico: disciplinas por período, at
 - **Temas (versão web)**: padrão *Azul*, além de Preto e branco, Verde, Roxo, Rosa e cor personalizada, cada um em **modo claro e escuro**, escolhidos na barra lateral.
 - **Sugestões de estudo** para todas as disciplinas (não só as em alerta), com atrasos e prazos da semana.
 
-## 📚 Tabela
+## 📚 Tabela / Resumo do Site
 
 > **Critério de Aprovação:** Nota mínima `6.0` por disciplina.
 

@@ -2,9 +2,9 @@
 
 ![Logo Acompanhamento de Atividades e Notas](./caminho/para/sua/imagem.jpg)
 
-# Acompanhamento-de-Atividades-e-Notas
+# Sobre
 O Acompanhamento de Atividades e Notas é uma aplicação inteligente desenvolvida com o suporte do GitHub Copilot. Além de organizar tarefas acadêmicas, prazos e notas ponderadas, o projeto integra prompts e fluxos assistidos por IA para ajudar estudantes a otimizarem seus cronogramas de estudo e anteciparem necessidades de reforço escolar.
-# 📚 Acompanhamento de Atividades e Notas
+# 📚 Breve Resumo
 
 > Sistema desenvolvido para centralizar o controle acadêmico, eliminar a redundância de planilhas e otimizar a visualização de prazos, entregas e desempenho escolar/universitário.
 

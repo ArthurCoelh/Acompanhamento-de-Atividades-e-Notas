@@ -79,7 +79,6 @@ O sistema utiliza um modelo relacional estruturado para garantir a integridade d
 
 ## 👥 Colaboradores
 
-| :--- | :--- | :--- |
- **Cauã Paiva** 
- **Arthur Ferreira** 
- **Josielly Macedo** 
+- **Cauã Paiva**
+- **Arthur Ferreira**
+- **Josielly Macedo**

@@ -140,3 +140,9 @@ calculos.py    médias, nota necessária e situação
 tests/         testes unitários
 .github/       CI (Actions) e instruções do Copilot
 ```
+
+## 👥 Colaboradores
+
+- **Cauã Paiva**
+- **Arthur Ferreira**
+- **Josielly Macedo**

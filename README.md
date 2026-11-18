@@ -11,6 +11,24 @@ Aplicação para centralizar o controle acadêmico: disciplinas por período, at
 - **Temas (versão web)**: padrão *Azul*, além de Preto e branco, Verde, Roxo, Rosa e cor personalizada, cada um em **modo claro e escuro**, escolhidos na barra lateral.
 - **Sugestões de estudo** para todas as disciplinas (não só as em alerta), com atrasos e prazos da semana.
 
+## 📚 Acompanhamento de Atividades e Notas
+
+> **Critério de Aprovação:** Nota mínima `6.0` por disciplina.
+
+| Disciplina | Atividade | Tipo | Data de Entrega | Status | Peso | Nota |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Compiladores | Análise Léxica e Sintática | Projeto | 23/11/2026 | ⏳ Em andamento | 3.0 | - |
+| Compiladores | Lista de Gramáticas Livres de Contexto | Lista | 30/11/2026 | 📅 Pendente | 2.0 | - |
+| Inteligência Artificial | Algoritmos de Busca (A* e Heurísticas) | Trabalho | 26/11/2026 | 📅 Pendente | 2.5 | - |
+| Inteligência Artificial | Redes Neurais e Classificação | Projeto | 04/12/2026 | 📅 Pendente | 2.5 | - |
+
+### 📊 Painel de Indicadores
+* **Atividades em Aberto:** `4`
+* **Disciplinas em Alerta (Nota < 6.0):** `0`
+* **Próximo Prazo:** `23/11/2026` *(Compiladores - Análise Léxica e Sintática)*
+* **Nota Mínima Exigida:** `6.0`
+* **Legenda de Status:** ✅ Concluído | ⏳ Em andamento | 📅 Pendente | ⚠️ Atrasado
+
 ## 🛠️ Tecnologias
 Python 3.10+ · Streamlit · Pandas · SQLite · Tkinter (versão desktop) · Git & GitHub
 

@@ -1,6 +1,6 @@
 # Acompanhamento de Atividades e Notas
 
-![Logo Acompanhamento de Atividades e Notas](./caminho/para/sua/imagem.jpg)
+<p align="center"> <img width="416" height="106" alt="logo melhor" src="https://github.com/user-attachments/assets/c5660ff2-1ca2-4f53-9571-5a261f2bb7ca" /> </p>
 
 # Sobre
 O Acompanhamento de Atividades e Notas é uma aplicação inteligente desenvolvida com o suporte do GitHub Copilot. Além de organizar tarefas acadêmicas, prazos e notas ponderadas, o projeto integra prompts e fluxos assistidos por IA para ajudar estudantes a otimizarem seus cronogramas de estudo e anteciparem necessidades de reforço escolar.

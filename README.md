@@ -62,8 +62,8 @@ O **Acompanhamento de Atividades e Notas** nasceu da necessidade de criar uma so
 | :--- | :--- |
 | **Painel Acadêmico** | Visão geral com cartões de resumo (disciplinas, atividades em aberto, próximos prazos, alertas), desempenho por disciplina, próximos prazos cronológicos e sugestões de estudo[cite: 1, 6]. |
 | **Gestão de Disciplinas** | Cadastro de matérias informando período letivo (ex: `2026.2`) e média mínima exigida (`6,0`). |
-| **Gestão de Atividades e Notas** | Listagem de tarefas por disciplina com descrição, prazos, pesos, status (`Pendente` / `Concluída`) e notas parciais para cálculo automático de aprovação[cite: 4, 9, 10]. |
-| **Barra Lateral e Perfil** | Configurações de tema (claro/escuro e cores), seletor de alunos ativos (ex: `João (#1)`) e opções de cadastro/exclusão de perfis[cite: 1, 7]. |
+| **Gestão de Atividades e Notas** | Listagem de tarefas por disciplina com descrição, prazos, pesos, status (`Pendente` / `Concluída`) e notas parciais para cálculo automático de aprovação. |
+| **Barra Lateral e Perfil** | Configurações de tema (claro/escuro e cores), seletor de alunos ativos (ex: `João (#1)`) e opções de cadastro/exclusão de perfis. |
 
 ---
 

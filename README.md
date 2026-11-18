@@ -77,8 +77,10 @@ O sistema utiliza um modelo relacional estruturado para garantir a integridade d
 
 ---
 
-## Integrantes 
+## 👥 Colaboradores
 
-Cauã Paiva
-Arthur Ferreiea
-Josielly Macedo
+| Nome | Função / Contribuição | Perfil no GitHub |
+| :--- | :--- | :--- |
+| **Cauã Paiva** |
+| **Arthur Ferreira** | 
+| **Josielly Macedo** |
